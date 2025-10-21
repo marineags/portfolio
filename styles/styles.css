@@ -1,0 +1,243 @@
+* {
+  margin: auto;
+  padding: 0;
+}
+
+body {
+  font-family: "roboto-mono-", sans-serif;
+}
+
+.slider {
+  width: 100%;
+  min-height: 80vh;
+  aspect-ratio: 16/9;
+  background: black;
+  position: relative;
+}
+
+.slider-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(30%);
+  background-size: cover;
+  background-position: center;
+}
+
+.slider-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 100px;
+  color: #4e5236;
+}
+
+.highlight {
+  color: #fff;
+}
+
+p {
+  font-size: 5rem;
+  line-height: 1em;
+  color: #4e5236;
+}
+.slider-content p {
+  color: rgb(235, 234, 232);
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.w25 {
+  width: 25%;
+}
+
+.w33 {
+  width: 33%;
+}
+
+.boxed {
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap; /* pour que ça passe à la ligne si besoin */
+  justify-content: center;
+}
+
+.dark {
+  background: #4e5236;
+  color: #fff;
+}
+
+.w40 {
+  width: 20%;
+}
+
+.w60 {
+  width: 60%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.space-beetwen {
+  justify-content: space-between;
+}
+.w32 {
+  width: 32%;
+}
+
+.gap20 {
+  gap: 20px;
+}
+
+.skill {
+  background: rgba(27, 26, 21, 0.23);
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 280px;
+  height: 160px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill img {
+  width: 70px;
+  height: 70px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.skill h3 {
+  margin-top: 10px;
+  /* font-size: 70%; */
+}
+
+.realisation {
+  height: auto;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.realisation h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  width: max-content;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.realisation a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.realisation img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(30%);
+  transition: 2s ease;
+}
+
+.realisation:hover img {
+  filter: brightness(60%);
+}
+
+.realisation:hover h3 {
+  opacity: 1;
+}
+
+.me {
+  height: 20%;
+  background-color: black;
+}
+
+.flex1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* .flex2{
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+/* titre empilés verticalement a la photo*/
+.w40 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* taille de la photo */
+.me {
+  width: 250px; /* tu peux changer selon ton image */
+  height: auto;
+  border-radius: 20px; /* optionnel pour un effet arrondi */
+  object-fit: cover;
+  margin-bottom: 20px; /* espace entre la photo et le titre */
+}
+
+/* Le texte à droite */
+.w60 p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Styles par défaut - mobile d'abord */
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* Tablettes : au-dessus de 768px */
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+/* Ordinateurs : au-dessus de 1024px */
+@media (min-width: 1024px) {
+  .card {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+}
