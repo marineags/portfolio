@@ -39,7 +39,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 3rem;
+  margin-top: 30px;
   margin-bottom: 100px;
   color: #4e5236;
 }
@@ -291,13 +292,4 @@ a {
     width: 250px;
     margin-bottom: 0;
   } /* format portrait propre */
-}
-
-/* Ordinateurs : au-dessus de 1024px */
-@media (min-width: 1024px) {
-  .card {
-    padding: 2rem;
-    max-width: 900px;
-    margin: auto;
-  }
 }
